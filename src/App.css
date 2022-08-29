@@ -1,0 +1,256 @@
+/*navbar css*/
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.category-links {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+.category-links > a {
+    text-decoration: none;
+    color: black;
+}
+.category-links > a:hover {
+    color: gray;
+}
+.nav-icons {
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*cart css*/
+.sap {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sapicons {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+.scart {
+    width: 15px;
+    height: 15px;
+    border: 2px solid lightseagreen;
+    padding: 5px;
+    border-radius: 50%;
+}
+.truck1 {
+    width: 15px;
+    height: 15px;
+    background-color: lightseagreen;
+    padding: 5px;
+    border-radius: 50%;
+}
+.lpcd {
+    width: 85%;
+    margin: 30px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.lsandform {
+    width: 40%;
+}
+.login, .signup {
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.login:hover, .signup:hover {
+    background-color: rgb(30, 202, 102);
+    color: white;
+}
+.form {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+.form > input {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+.paymentBtns {
+    display: grid;
+    grid-template-columns: 110px 110px 110px;
+    row-gap: 10px;
+}
+.btn {
+    width: 100px;
+    height: 35px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+.btn:hover, .btn1:hover {
+    border-color: black;
+}
+.delivery {
+    margin-top: 50px;
+}
+.deliveryBtns {
+    display: grid;
+    grid-template-columns: 160px 160px;
+    row-gap: 10px;
+}
+.btn1 {
+    width: 150px;
+    height: 35px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.tshirtDetails {
+    font-size: 14px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tc {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgray;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+.freedel {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.backcheckoutBtn {
+    width: 85%;
+    margin: 50px auto 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.backBtn {
+    width: 6%;
+    background-color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.continueBtn {
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.continueBtn:hover {
+    background-color: black;
+    color: white;
+}
+.proceedBtn {
+    font-size: 12px;
+    background-color: rgb(30, 202, 102);
+    padding: 10px 20px;
+    border: 1px solid rgb(30, 202, 102);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.proceedBtn:hover {
+    background-color: white;
+    color: rgb(30, 202, 102);
+}
+
+/*login css*/
+.loginform {
+    border: 1px solid black;
+    width: 30%;
+    margin: 50px auto;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px black;
+}
+.loginform > form {
+    width: 60%;
+    margin: auto;
+}
+.loginform > form > label {
+    width: 25%;
+    margin: 20px auto;
+    float: left;
+}
+.loginform > form > input {
+    padding: 5px 10px;
+    margin: 20px 0;
+}
+.loginform > form > button {
+    background-color: white;
+    border: 1px solid rgb(30, 202, 102);
+    padding: 10px 20px;
+    color: rgb(30, 202, 102);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.loginform > form > button:hover {
+    color: white;
+    background-color: rgb(30, 202, 102);
+}
+
+/*register css*/
+.registerform {
+    width: 30%;
+    margin: 50px auto;
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+}
+.registerform > form {
+    width: 70%;
+    margin: auto;
+}
+.registerform > form > label {
+    width: 35%;
+    margin: 10px auto;
+    float: left;
+}
+.registerform > form > input {
+    padding: 5px 10px;
+    margin: 10px 0;
+}
+.registerform > form > button {
+    background-color: rgb(30, 202, 102);
+    border: 1px solid rgb(30, 202, 102);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 20px;
+}
+.registerform > form > button:hover {
+    background-color: white;
+    color: rgb(30, 202, 102);
+}
