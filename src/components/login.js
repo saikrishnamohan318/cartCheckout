@@ -5,7 +5,7 @@ function Logincomponent({ login,displaybtn }){
     var submitHandle = (event) => {
         event.preventDefault();
         login(user);
-        setUser({email:'', password:''})
+        setUser({email:'', password:''});
     }
     return(
         <div className="loginform">
@@ -15,7 +15,7 @@ function Logincomponent({ login,displaybtn }){
                 <label htmlFor="password">Password: </label><input type="password" placeholder="Password" onChange={e=>setUser({...user, password: e.target.value})} value={user.password}/><br></br>
                 <button>Login</button><br></br>
             </form>
-            <p onClick={()=>displaybtn()} style={{cursor:"pointer"}}>Signup</p>
+            <p onClick={()=>displaybtn()} className="signupbtn">Signup</p>
         </div>
     )
 }

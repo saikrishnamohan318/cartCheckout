@@ -61,7 +61,7 @@
 .lsandform {
     width: 40%;
 }
-.login, .signup {
+.login {
     background-color: white;
     border: 1px solid lightgray;
     padding: 10px 25px;
@@ -69,9 +69,26 @@
     cursor: pointer;
     margin-right: 10px;
 }
-.login:hover, .signup:hover {
+.login:hover {
     background-color: rgb(30, 202, 102);
     color: white;
+}
+.welcome {
+    display: flex;
+    justify-content: space-between;
+}
+.logoutbtn {
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+    padding: 0 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.logoutbtn:hover {
+    background-color: white;
+    color: red;
 }
 .form {
     display: grid;
@@ -218,6 +235,13 @@
     color: white;
     background-color: rgb(30, 202, 102);
 }
+.signupbtn {
+    cursor: pointer;
+}
+.signupbtn:hover {
+    text-decoration: underline;
+    color: blue;
+}
 
 /*register css*/
 .registerform {
@@ -253,4 +277,12 @@
 .registerform > form > button:hover {
     background-color: white;
     color: rgb(30, 202, 102);
+}
+.gotologin {
+    text-align: center;
+    cursor: pointer;
+}
+.gotologin:hover {
+    text-decoration: underline;
+    color: blue;
 }

@@ -28,9 +28,9 @@ function Cartcomponent(){
             setLoginSuccess(false);
             setBool(false);
         }else {
+            alert('Click on signup (or) Entered password is incorrect');
             setLoginSuccess(true);
             setBool(true);
-            alert('Click on signup (or) Entered password is incorrect');
         }
     }
     var loginbtn = () => {
@@ -41,6 +41,10 @@ function Cartcomponent(){
     }
     var registerbtn = (data) => {
         localStorage.setItem('registerData', JSON.stringify(data));
+    }
+    var logoutbtn = () => {
+        localStorage.removeItem('registerData');
+        setLoginSuccess(true);
     }
     return(
         <>
@@ -61,12 +65,14 @@ function Cartcomponent(){
                                 {loginsuccess ? 
                                 <>
                                 <button className="login" onClick={loginbtn}>LOGIN</button>
-                                <button className="signup">SIGNUP</button>
                                 </> :
-                                <>
-                                <p style={{fontSize:"25px",margin:"0"}}>Welcome {registerData.name}.</p>
-                                <p style={{margin:"0"}}>Plesae enter below information</p> 
-                                </>
+                                <div className="welcome">
+                                    <div>
+                                        <p style={{fontSize:"25px",margin:"0"}}>Welcome {registerData.name}.</p>
+                                        <p style={{margin:"0"}}>Plesae enter below information</p> 
+                                    </div>
+                                    <button className="logoutbtn" onClick={logoutbtn}>Logout</button>
+                                </div>
                                 }
                             </div>
                             <div style={{marginTop:"50px"}}>

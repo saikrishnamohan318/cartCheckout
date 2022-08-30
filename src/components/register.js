@@ -37,7 +37,7 @@ function Registercomponent({ registerbtn,displaybtn }){
             </form>
         </div>
         <div id="success" style={{display:"none"}}>
-            <p onClick={()=>displaybtn()} style={{textAlign:"center",cursor:"pointer"}}>Go to Login</p>
+            <p onClick={()=>displaybtn()} style={{textAlign:"center",cursor:"pointer"}} className="gotologin">Go to Login</p>
             <p style={{fontSize:"30px",textAlign:"center"}}>Registered succesfully</p>
         </div>
         </>
