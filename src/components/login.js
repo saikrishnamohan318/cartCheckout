@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 function Logincomponent({ login,displaybtn }){
     const [user,setUser] = useState({email:'', password:''});
+    /*sending data to cart.js to verify user*/
     var submitHandle = (event) => {
         event.preventDefault();
         login(user);

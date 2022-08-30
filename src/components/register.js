@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 function Registercomponent({ registerbtn,displaybtn }){
     const [data,setData] = useState({name:'', email:'', phonenumber:'', password:''});
+    /*sending data to cart.js to save data to local storage*/
     var submitHandle = (e) => {
         e.preventDefault();
         registerbtn(data);

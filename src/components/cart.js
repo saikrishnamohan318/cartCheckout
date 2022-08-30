@@ -22,6 +22,8 @@ function Cartcomponent(){
     const [loginsuccess,setLoginSuccess] = useState(true);
     const [display,setDisplay] = useState(true);
     const registerData = JSON.parse(localStorage.getItem('registerData'));
+
+    /*verifying user data*/
     var login = (user) => {
         console.log(user);
         if(user.email === registerData.email && user.password === registerData.password){
@@ -33,15 +35,23 @@ function Cartcomponent(){
             setBool(true);
         }
     }
+
+    /*to display login button (or) welcome message*/
     var loginbtn = () => {
         setBool(true);
     }
+
+    /*to display login component (or) register component*/
     var displaybtn = () => {
         setDisplay(!display);
     }
+
+    /*to save the data to local storage*/
     var registerbtn = (data) => {
         localStorage.setItem('registerData', JSON.stringify(data));
     }
+
+    /*to remove the data from local storage and to display login button*/
     var logoutbtn = () => {
         localStorage.removeItem('registerData');
         setLoginSuccess(true);
